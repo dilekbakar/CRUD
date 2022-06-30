@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verileri Giriniz!"
+        android:id="@+id/txt1"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtAd"
+        android:textSize="25dp"
+        android:hint="Ad"
+        android:layout_below="@+id/txt1"
+        android:inputType="textPersonName"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtSoyAd"
+        android:textSize="25dp"
+        android:hint="Soyad"
+        android:layout_below="@+id/edtAd"
+        android:inputType="textPersonName"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtTel"
+        android:textSize="25dp"
+        android:hint="Telefon"
+        android:layout_below="@+id/edtSoyAd"
+        android:inputType="number"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTel"
+        android:text="EKLE"
+        android:id="@+id/btnInsert"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnInsert"
+        android:text="GÜNCELLE"
+        android:id="@+id/btnUpdate"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUpdate"
+        android:text="SİL"
+        android:id="@+id/btnDelete"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDelete"
+        android:text="LİSTELE"
+        android:id="@+id/btnView"/>
+
+</RelativeLayout>
